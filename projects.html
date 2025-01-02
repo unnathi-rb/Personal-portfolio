@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(90deg, #8309c9, #ac8ed1);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #55017c;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #967BB6;
+            border: 2px solid #7843b9;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, #8309c9, #eabfff);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        }
+
+        .page-header h1 {
+            font-size: 4rem;
+        }
+
+        .projects-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .project-card {
+            width: 0%;
+            min-width: 550px;
+            background: white;
+            padding: 6rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 3rem;
+            color: #8309c9;
+        }
+
+        .project-card p {
+            font-size: 1.7rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="frontend.html">Home</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="contactme.html">Contact</a>
+    </nav>
+    <section class="page-header">
+        <h1>Projects</h1>
+    </section>
+    <section class="projects-section">
+        <div class="project-card">
+            <h3>College Website</h3>
+            <p>Collaborated with peers to design and develop a modern college website using HTML, CSS, and Python. It portrays the transition of UVCE and provides a tour of the present campus.</p>
+        </div>
+        <div class="project-card">
+            <h3>Microrobots in Neurosurgery</h3>
+            <p>Presented a poster on the innovative application of microrobots in neurosurgery at the KAGADA National Conference, demonstrating the potential for medical advancements.</p>
+        </div>
+        <div class="project-card">
+            <h3>Movie Time Webpage</h3>
+            <p>An API-based webpage to gain information about movies using just the title.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio | Designed with ❤</p>
+    </footer>
+</body>
+</html>
+
+
+
+

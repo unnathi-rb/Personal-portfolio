@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs - My Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(90deg, #8309c9, #ac8ed1);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #55017c;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0.5rem;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #967BB6;
+            border: 2px solid #7843b9;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 4rem 6rem;
+            background: linear-gradient(180deg, #8309c9, #eabfff);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        }
+
+        .page-header h1 {
+            font-size: 4rem;
+        }
+
+        .clubs-section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 1rem;
+        }
+
+        .club-card {
+            display: flex;
+            margin: 2rem 0;
+            padding: 3rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .club-card:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .club-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .club-card:nth-child(even) .club-image {
+            margin-left: 1rem;
+            margin-right: 0;
+        }
+
+        .club-content {
+            flex: 2;
+        }
+
+        .club-content h3 {
+            font-size: 2rem;
+            color: #8309c9;
+        }
+
+        .club-content p {
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .club-card {
+                flex-direction: column;
+            }
+
+            .club-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .club-image {
+                margin: 0 0 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="frontend.html">Home</a>
+        <a href="contactme.html">Contact</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    <section class="page-header">
+        <h1>Clubs I'm Part Of</h1>
+    </section>
+    <section class="clubs-section">
+        <div class="club-card">
+           
+            <div class="club-content">
+                <h3>IEEE UVCE</h3>
+                <p>A Student wing of the IEEE society in UVCE.I am a member of the representative commity of IEEE UVCE.</p>
+            </div>
+        </div>
+        <div class="club-card">
+            <
+            <div class="club-content">
+                <h3>Marvel-R&D Lab</h3>
+                <p>I am a student of batch 6 of marvel , it is a honour to be able to learn and collaberate with tech enthusiasts.</p>
+            </div>
+        </div>
+        <div class="club-card">
+            <div class="club-content">
+                <h3>Vachana- Red talk society of UVCE</h3>
+                <p>It is a speech oriented club of UVCE.I am a RED COLLAR in it.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio | Designed with ❤</p>
+    </footer>
+</body>
+</html>
